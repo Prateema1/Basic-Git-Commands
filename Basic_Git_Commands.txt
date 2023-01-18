@@ -1,0 +1,25 @@
+# What is Git?
+
+# Why do we use it?
+
+# What is Github?
+
+# Why do we use it? 
+
+# Basic Git Commands To Get Started
+   ## Initializing a git repository
+   ## Making the first change
+   ## Staging the first change
+   ## Committing the first change
+   ## Removing changes from stage
+   ## Viewing the overall history of project
+   ## Removing a commit from the history of a project
+   ## Stashing changes
+   ## Popping stash 
+   ## Clearing stash 
+
+
+# Starting with Github
+   ## Creating a new repository on Github
+   ## Connecting remote repository to local repository
+   ## Pushing local changes to remote repository
