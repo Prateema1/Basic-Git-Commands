@@ -1,25 +1,55 @@
 # What is Git?
+   Git is a version control system (the tech) that is used to track the history of our project.
 
 # Why do we use it?
+   We use Git:
+    1) To track the history of the project.
+    2) To share code and collaborate in an open source project.
 
 # What is Github?
+    Github is an online web platform that allows us to host our git repositories.
+    Other examples include Gitlab, Bitbucket. 
 
-# Why do we use it? 
+# Why do we use it?
+    Github provides us a GUI to easily access the features such as creating new repositories, collaborating with other developers and more. 
 
 # Basic Git Commands To Get Started
-   ## Initializing a git repository
-   ## Making the first change
-   ## Staging the first change
-   ## Committing the first change
-   ## Removing changes from stage
-   ## Viewing the overall history of project
-   ## Removing a commit from the history of a project
-   ## Stashing changes
-   ## Popping stash 
-   ## Clearing stash 
 
+   ## Initializing a git repository
+      - git init (Initializes an empty git repository. Repository is simply a folder.) 
+   ## Making the first change
+        You can add a simple text file to your current project folder and add some demo content.
+      - git status (To know what changes have been made that are currently not in the project's history.)
+   ## Staging the first change
+      - git add . (Saves all the untracked files present in the current project directory to the project's history.)
+   ## Committing the first change
+      - git commit -m "Message explaining the changes."
+   ## Removing changes from stage
+      - git restore --staged <file>
+   ## Viewing the overall history of project
+      - git log
+   ## Removing a commit from the history of a project
+      - git reset commitHashId  (Removes all the commit above the selected commitHashId. Now, available in the unstaged area.)
+   ## Stashing changes
+      - git stash (Changes do not reflect in the  history of the project but available in the backstage area.)
+   ## Popping stash 
+      - git stash pop (Brings back all the changes available in the backstage area.)
+   ## Clearing stash 
+      - git stash clear (Permanently removes all the changes that were stashed in the backstage area.)
 
 # Starting with Github
    ## Creating a new repository on Github
+      - You can use Github platform to create one. 
    ## Connecting remote repository to local repository
+      - git remote add origin <remote repository url> (Connects the remote url with our local project.)
+        Explanation:
+        git : git command 
+        remote: working with urls
+        add: adding a new url
+        origin: name of the url we are going to add (By convention all the repositories and folders available in our personal github account is named origin.)
    ## Pushing local changes to remote repository
+      - git push origin branchName 
+   ## Viewing all the remote url
+      - git remote -v (Shows all the url attached to our current project.)
+
+
